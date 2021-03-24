@@ -7,6 +7,7 @@ import {
   Button,
   Buttons,
   Card,
+  Title,
 } from "./styles";
 import Image from "next/image";
 
@@ -26,15 +27,15 @@ const ProfileCard = () => {
     <Container>
       <Card>
         <Photo>
-          <Image
+          {/* <Image
             src="/img/profile.jpg"
             alt="Picture of the author"
             width={400}
             height={450}
-          />
+          /> */}
         </Photo>
         <About>
-          <h1>Acerca de</h1>
+          <Title>Acerca de</Title>
           <Description>
             Cuento con 3 años de experiencia en el desarrollo de aplicaciones
             web, constantemente me encuentro aprendiendo nuevas tecnologías. Mi
@@ -45,8 +46,8 @@ const ProfileCard = () => {
           </Description>
           <Buttons>
             <Button onClick={clickHandle}>
-              <FontAwesomeIcon icon={faLinkedin} />
-              LinkeIn<span aria-hidden>_</span>
+              <FontAwesomeIcon icon={faLinkedin} /> LinkeIn
+              <span aria-hidden>_</span>
               <span aria-hidden class="cybr-btn__glitch">
                 <FontAwesomeIcon icon={faLinkedin} /> LinkeIn_
               </span>

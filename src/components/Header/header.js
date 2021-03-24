@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <Container>
       <Title>Walter Miguel Díaz Jaramillo</Title>
-      <Subtitle>FullStackDeveloper</Subtitle>
+      <Subtitle>FrontEndDeveloper</Subtitle>
     </Container>
   );
 };

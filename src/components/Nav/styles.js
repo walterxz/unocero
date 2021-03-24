@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
-  height: 46px;
   display: flex;
+  height: 46px;
+  width:100%;
+
   align-items: center;
   justify-content: center;
   background-color: black;
@@ -21,7 +23,6 @@ export const Logo = styled.div`
   border-radius: 4px;
   height: 30px;
   width: 30px;
-
   color: whitesmoke;
   background-color: red;
 `;

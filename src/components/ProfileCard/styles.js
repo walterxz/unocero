@@ -65,9 +65,11 @@ const glitch = keyframes`
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  padding: 0 32px 16px 32px;
   width: 100vw;
-  height: 400px;
+  margin-bottom:80px;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const Card = styled.div`
@@ -76,9 +78,10 @@ export const Card = styled.div`
   border-radius: 4px;
   z-index: 0;
   max-width: 800px;
+  height: 100%;
   background-color: whitesmoke;
   padding: 16px;
-  margin: 32px;
+  margin: 0 32px 32px 32px;
   clip-path: polygon(
     50px 0,
     100% 0,
@@ -87,7 +90,14 @@ export const Card = styled.div`
     0 100%,
     0 50px
   );
+
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 14px 18px 14px;
+  }
 `;
+
 export const About = styled.div`
   padding: 16px;
 `;
@@ -97,20 +107,28 @@ export const Description = styled.p`
 `;
 
 export const Photo = styled.div`
-  /* height: 100%; */
-  /* width: 100%; */
+  height: 240px;
+  min-width: 240px;
+  background-color: red;
   border-radius: 50%;
 `;
+
 export const Buttons = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+export const Title = styled.h1`
+  font-family: "Cyber";
 `;
 
 export const Button = styled.div`
-  @font-face {
-    font-family: Cyber;
-    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
-    font-display: swap;
+  @media (max-width: 768px) {
+    margin-top: 16px;
+    margin-right: 0;
   }
 
   --primary: hsl(
@@ -217,6 +235,9 @@ export const Button = styled.div`
     8% 80%,
     0 70%
   );
+  text-align: center;
+  margin-right: 16px;
+
   font-family: "Cyber", sans-serif;
   color: var(--color);
   cursor: pointer;
@@ -228,7 +249,7 @@ export const Button = styled.div`
   position: relative;
   font-weight: 700;
   border: 0;
-  min-width: 300px;
+  min-width: 240px;
   height: 75px;
   line-height: 75px;
   transition: background 0.2s;

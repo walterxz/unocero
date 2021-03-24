@@ -1,6 +1,11 @@
 body {
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-      'Arial', sans-serif;
-    margin: 0 auto;
-    background-color: whitesmoke;
-  }
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    'Arial', sans-serif;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+@font-face {
+  font-family: Cyber;
+  src: url('https://assets.codepen.io/605876/Blender-Pro-Bold.otf');
+  font-display: swap;
+}

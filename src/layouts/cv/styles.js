@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {keyframes} from "styled-components";
 
 export const Container = styled.div`
   display: grid;
@@ -9,7 +10,36 @@ export const Container = styled.div`
     "info-card"
     "projects"
     "footer";
-  /* display: flex;
-  flex-direction: column;
-  background-color: red; */
+`;
+
+const animation = keyframes`
+ 0% {
+    filter: blur(5px);
+ }
+ 50% { 
+    filter: blur(1px);
+ }
+ 100% { 
+    filter: blur(5px);
+  }
+`;
+
+export const ContainerImage = styled.div`
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+
+  animation-name: ${animation};
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+
+  @media (max-width: 768px) {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+  }
 `;

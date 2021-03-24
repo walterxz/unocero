@@ -27,9 +27,9 @@ const Projects = () => {
       {projects.forEach((project) => {
         return <Framework project={project}></Framework>;
       })}
-      <textarea rows="10" cols="50">
+      {/* <textarea rows="10" cols="30">
         {JSON.stringify(projects, undefined, 2)}
-      </textarea>
+      </textarea> */}
     </Container>
   );
 };
