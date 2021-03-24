@@ -36,10 +36,6 @@ export const ContainerImage = styled.div`
   animation-iteration-count: infinite;
 
   @media (max-width: 768px) {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
+    animation-name:none !important;
   }
 `;

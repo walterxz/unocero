@@ -66,7 +66,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   @media (max-width: 768px) {
     padding: 0;
   }
@@ -92,9 +92,9 @@ export const Card = styled.div`
   );
 
   @media (max-width: 768px) {
-    width: 100%;
+    padding: 12px 8px;
     flex-direction: column;
-    margin: 0 14px 18px 14px;
+    margin: 14px;
   }
 `;
 
@@ -110,7 +110,7 @@ export const Photo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index:-3;
+  z-index: -3;
   height: 220px;
   min-width: 220px;
   background-color: red;

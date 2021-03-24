@@ -44,6 +44,7 @@ export const Title = styled.div`
   -webkit-animation: ${glow} 10s ease-in-out infinite alternate;
   -moz-animation: ${glow} 10s ease-in-out infinite alternate;
   animation: ${glow} 10s ease-in-out infinite alternate;
+
 `;
 
 export const Subtitle = styled.div`
@@ -51,7 +52,7 @@ export const Subtitle = styled.div`
   font-family: Cyber;
   color: #fff;
   text-align: center;
-  -webkit-animation: ${subglow} 3s ease-in-out infinite alternate;
-  -moz-animation: ${subglow} 3s ease-in-out infinite alternate;
-  animation: ${subglow} 3s ease-in-out infinite alternate;
+  -webkit-animation: ${subglow} 2s ease-in-out infinite alternate;
+  -moz-animation: ${subglow} 2s ease-in-out infinite alternate;
+  animation: ${subglow} 2s ease-in-out infinite alternate;
 `;
