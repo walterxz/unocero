@@ -9,10 +9,11 @@ const cv = () => {
       .fetch('api/projects')
       .then((response) => response.json())
       .then(({ data, length }) => {
+        console.log(data)
         setProjects(data)
       })
       .catch((err) => {
-        createUnparsedSourceFile.log(err)
+        console.log(err)
       })
   })
 
