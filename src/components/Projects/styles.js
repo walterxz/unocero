@@ -8,16 +8,7 @@ export const Container = styled.div`
   background-color: red;
   min-height: 100%;
 
-  clip-path: polygon(
-    calc(20% - 100px) 0,
-    calc(20% - 50px) calc(120px - 100% ),
-    calc(20% ) 0,
-    100% 0,
-    100% 100%,
-    100% 100%,
-    0 100%,
-    0 0
-  );
+  clip-path: polygon(14% 0, 20% 20%, 26% 0, 100% 0, 100% 100%, 0 100%, 0 0);
 `;
 
 export const Title = styled.div`

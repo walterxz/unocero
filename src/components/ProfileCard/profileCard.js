@@ -27,12 +27,18 @@ const ProfileCard = () => {
     <Container>
       <Card>
         <Photo>
-          {/* <Image
-            src="/img/profile.jpg"
+          <Image
+            className="avatar"
+            src="/img/p.png"
             alt="Picture of the author"
-            width={400}
-            height={450}
-          /> */}
+            width={220}
+            height={220}
+          />
+           <style jsx global>{`
+    .avatar {
+      border-radius: 50%;
+    }
+  `}</style>
         </Photo>
         <About>
           <Title>Acerca de</Title>

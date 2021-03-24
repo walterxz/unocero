@@ -66,7 +66,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
-  margin-bottom:80px;
+  margin-bottom: 80px;
   @media (max-width: 768px) {
     padding: 0;
   }
@@ -107,8 +107,12 @@ export const Description = styled.p`
 `;
 
 export const Photo = styled.div`
-  height: 240px;
-  min-width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index:-3;
+  height: 220px;
+  min-width: 220px;
   background-color: red;
   border-radius: 50%;
 `;
