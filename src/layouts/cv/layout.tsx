@@ -1,20 +1,24 @@
 import Nav from '@components/Nav/nav'
 import Header from '@components/Header/header'
-import Card from '@components/Card/card'
+import ProfileCard from '@components/ProfileCard/profileCard'
 import Footer from '@components/Footer/footer'
-import Projects from "@components/Projects/projects";
+import Projects from '@components/Projects/projects'
+import Wallpaper from '@components/Wallpaper/wallpaper'
 
 import { Container } from './styles'
 
 const LayoutCV = () => {
   return (
-    <Container>
-      <Nav />
-      <Header />
-      <Card />
-      <Projects/>
-      <Footer />
-    </Container>
+    <>
+      <Wallpaper />
+      <Container>
+        <Nav />
+        <Header />
+        <ProfileCard />
+        <Projects />
+        <Footer />
+      </Container>
+    </>
   )
 }
 

@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <Container>
-      <span>Footer</span>
+      <div>working on the website</div>
     </Container>
   );
 };
