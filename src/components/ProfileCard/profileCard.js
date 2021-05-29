@@ -31,8 +31,8 @@ const ProfileCard = () => {
             className="avatar"
             src="/img/p.png"
             alt="Picture of the author"
-            width={220}
-            height={220}
+            width={210}
+            height={210}
           />
            <style jsx global>{`
     .avatar {
@@ -44,8 +44,8 @@ const ProfileCard = () => {
           <Title>Acerca de</Title>
           <Description>
             Cuento con 3 años de experiencia en el desarrollo de aplicaciones
-            web, constantemente me encuentro aprendiendo nuevas tecnologías. Mi
-            objetivo es pertenecer a una empresa de desarrollo de software en la
+            web, constantemente me encuentro aprendiendo nuevas tecnologías. <br/>
+            Mi objetivo es pertenecer a una empresa de desarrollo de software en la
             cual me pueda especializar como frontend, aplicar mis conocimientos
             generando un impacto positivo, no me cierro a la posibilidad de
             trabajar como fullstack.

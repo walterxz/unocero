@@ -9,6 +9,7 @@ export const Container = styled.nav`
 `;
 
 export const Button = styled.h1`
+  cursor: pointer;
   height: 100px;
   font-size:40px;
   color: #557AA3;

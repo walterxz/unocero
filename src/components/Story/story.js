@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, List, Logo } from "./styles";
+import { Container, Title } from "./styles";
 import Link from "next/link";
 
 import {
@@ -9,24 +9,13 @@ import {
 import { fab, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Nav = () => {
+const Story = () => {
   // Declara una nueva variable de estado, la cual llamaremos “count”
 
   return (
     <Container>
-      <Logo>
-        <FontAwesomeIcon icon={faTerminal}></FontAwesomeIcon>
-      </Logo>
-      <Link href="/">
-        <List>Home</List>
-      </Link>
-      <Link href="/blog">
-        <List>Blog</List>
-      </Link>
-      <Link href="#Projects">
-        <List>Proyectos</List>
-      </Link>
+      <Title>Certificados</Title>
     </Container>
   );
 };
-export default Nav;
+export default Story;

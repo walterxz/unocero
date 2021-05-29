@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
-
 export const Container = styled.nav`
+  height: 94px;
+  margin-bottom: 47px;
+  width: 100%;
   display: flex;
-  width:300px;
   align-items: center;
   justify-content: center;
-  background-color: whitesmoke;
-`;
-
-
-export const Title = styled.h3`
-
+  background-color: black;
+  color: white;
 `;

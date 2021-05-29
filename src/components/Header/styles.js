@@ -23,10 +23,10 @@ const subglow = keyframes`
 `;
 
 export const Container = styled.div`
+  margin-top: 47px;
   display: flex;
   flex-direction: column;
   height: 150px;
-  justify-content: center;
   align-items: center;
 `;
 
@@ -41,12 +41,19 @@ export const Title = styled.div`
 
   color: #fff;
   text-align: center;
-  -webkit-animation: ${glow} 10s ease-in-out infinite alternate;
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+    0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+
+  /* -webkit-animation: ${glow} 10s ease-in-out infinite alternate;
   -moz-animation: ${glow} 10s ease-in-out infinite alternate;
-  animation: ${glow} 10s ease-in-out infinite alternate;
-
+  animation: ${glow} 10s ease-in-out infinite alternate; */
 `;
-
+export const Fusion = styled.div`
+  width: 100%;
+  height: 47px;
+  /* background-color: black; */
+  background: linear-gradient(0deg, rgba(0, 255, 255, 0), rgba(0, 0, 0, 1));
+`;
 export const Subtitle = styled.div`
   font-size: 28px;
   font-family: Cyber;

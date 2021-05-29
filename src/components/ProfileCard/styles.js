@@ -65,9 +65,9 @@ const glitch = keyframes`
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 70px;
-  @media (max-width: 768px) {
+  @media (max-width: 870px) {
     padding: 0;
   }
 `;
@@ -80,7 +80,7 @@ export const Card = styled.div`
   max-width: 800px;
   height: 100%;
   background-color: whitesmoke;
-  padding: 16px;
+  padding: 8px;
   margin: 0 32px 32px 32px;
   clip-path: polygon(
     50px 0,
@@ -99,7 +99,7 @@ export const Card = styled.div`
 `;
 
 export const About = styled.div`
-  padding: 16px;
+  padding: 4px 16px;
 `;
 
 export const Description = styled.p`
@@ -113,7 +113,7 @@ export const Photo = styled.div`
   z-index: -3;
   height: 220px;
   min-width: 220px;
-  background-color: red;
+  background-color: #C30101;
   border-radius: 50%;
 `;
 

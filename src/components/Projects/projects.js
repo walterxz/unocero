@@ -1,68 +1,28 @@
 import React, { useState } from "react";
-import { Container, Title } from "./styles";
-import { Framework } from "../Framework/framework";
+import { Container, Title, ButtonGitHub } from "./styles";
+import { Framework } from "../FrameworkCard/framework";
+import data from "./data";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
-  let portfolio = [
-    {
-      tecnology: "Vue",
-      examples: [
-        {
-          title: "Preprocesadores CSS",
-          description:
-            "Replica el portal responsive de Netflix.com, elabora la estructura utilizando PUG, para la definición de estilos debes utilizar Less, Sass y Stylus e implementa los recursos necesario para que el código sea reutilizable y óptimo.",
-          github:
-            "https://github.com/walterxz/Reto-ResponsiveDesign-Preprocesadores",
-        },
-      ],
-    },
-    {
-      tecnology: "React",
-      examples: [
-        {
-          title: "Preprocesadores CSS",
-          description:
-            "Replica el portal responsive de Netflix.com, elabora la estructura utilizando PUG, para la definición de estilos debes utilizar Less, Sass y Stylus e implementa los recursos necesario para que el código sea reutilizable y óptimo.",
-          github:
-            "https://github.com/walterxz/Reto-ResponsiveDesign-Preprocesadores",
-        },
-      ],
-    },
-    {
-      tecnology: "Angular",
-      examples: [
-        {
-          title: "Preprocesadores CSS",
-          description:
-            "Replica el portal responsive de Netflix.com, elabora la estructura utilizando PUG, para la definición de estilos debes utilizar Less, Sass y Stylus e implementa los recursos necesario para que el código sea reutilizable y óptimo.",
-          github:
-            "https://github.com/walterxz/Reto-ResponsiveDesign-Preprocesadores",
-        },
-      ],
-    },
-    {
-      tecnology: "Retos CSS",
-      examples: [
-        {
-          title: "Preprocesadores CSS",
-          description:
-            "Replica el portal responsive de Netflix.com, elabora la estructura utilizando PUG, para la definición de estilos debes utilizar Less, Sass y Stylus e implementa los recursos necesario para que el código sea reutilizable y óptimo.",
-          github:
-            "https://github.com/walterxz/Reto-ResponsiveDesign-Preprocesadores",
-        },
-      ],
-    },
-  ];
-
+  const portfolio = data;
   return (
     <Container>
-      <Title>Proyectos</Title>
+      <Title id="Projects">Proyectos</Title>
+      <ButtonGitHub>
+        <a href="https://github.com/walterxz" target="_blank">
+          <FontAwesomeIcon icon={faGithub} /> GitHub
+        </a>
+      </ButtonGitHub>
+
       {portfolio.map((project) => {
-        return <Framework project={project}>Hola</Framework>;
+        return <Framework project={project}></Framework>;
       })}
-      {/* <textarea rows="10" cols="30">
-        {JSON.stringify(projects, undefined, 2)}
-      </textarea> */}
+      <h3>API</h3>
+      <textarea rows="10" cols="30">
+        {JSON.stringify(portfolio, undefined, 2)}
+      </textarea>
     </Container>
   );
 };
